@@ -6,7 +6,15 @@ module.exports = function(server) {
   const router = express.Router();
   server.use('/', router);
 
-  //Registering API methods in router
-  const itemService = require('../itens/pessoaService');
-  itemService.register(router, '/pessoa');
+  const authorService = require('../itens/authorService');
+  authorService.register(router, '/author');
+
+  const bookService = require('../itens/bookService');
+  bookService.register(router, '/book');
+
+  const bookInstanceService = require('../itens/bookInstanceService');
+  bookInstanceService.register(router, '/bookInstance');
+
+  const genreService = require('../itens/genreService');
+  genreService.register(router, '/genre');
 }
