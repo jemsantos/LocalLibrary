@@ -1,0 +1,32 @@
+{
+  "name": "locallibrary",
+  "version": "1.0.0",
+  "description": "Trabalho Prático de Node.js, Express e BD",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node loader.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jemsantos/LocalLibrary.git"
+  },
+  "keywords": [
+    "node.js",
+    "Mongoose",
+    "Express",
+    "MongoDB"
+  ],
+  "author": "Jose Eustaquio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jemsantos/LocalLibrary/issues"
+  },
+  "homepage": "https://github.com/jemsantos/LocalLibrary#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.18",
+    "node-restful": "^0.2.6"
+  }
+}
