@@ -6,15 +6,16 @@ module.exports = function(server) {
   const router = express.Router();
   server.use('/', router);
 
-  const authorService = require('../itens/authorService');
-  authorService.register(router, '/author');
+  const itemAuthor = require('../itens/authorService');
+  itemAuthor.register(router, '/author');
 
-  const bookService = require('../itens/bookService');
-  bookService.register(router, '/book');
+  const itemBook = require('../itens/bookService');
+  itemBook.register(router, '/book');
 
-  const bookInstanceService = require('../itens/bookInstanceService');
-  bookInstanceService.register(router, '/bookInstance');
+  const itemBookInstance = require('../itens/bookInstanceService');
+  itemBookInstance.register(router, '/book-instance');
 
-  const genreService = require('../itens/genreService');
-  genreService.register(router, '/genre');
+  const itemGenre = require('../itens/genreService');
+  itemGenre.register(router, '/genre');
+
 }
